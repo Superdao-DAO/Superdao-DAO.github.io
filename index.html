@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  
+
   <link rel='stylesheet' href='stylesheets/audio.css'>
 
 
@@ -760,14 +760,12 @@ Dappsery is a decentralized self serve dapp ad platform with a triple entry frau
       $<strong id="mkt_cap" style="color:green">...</strong>&nbsp;  <strong style="color: blue">|</strong>
       &nbsp;Total Tokens: &nbsp; <strong style="color: green;">100,000,000.00</strong> &nbsp;<strong style="color: blue">|</strong>
        &nbsp; Price: &nbsp;
-       <!--<strong style="color: green;" id="sup_usd"> 0.05134000</strong>
-       &nbsp; SUP/ETC: &nbsp; <strong style="color: green;" id="sup_etc">0.05134000</strong>/<strong style="color: green;">0.00013000 </strong>  &nbsp; SUPERNEUM PRICE: &nbsp; <strong style="color: green;">0.000551 </strong>BTC/SUP-->
-       $ <strong style="color: green;" class="usd_sup"> 0.05134000</strong> &nbsp; <strong style="color: blue">|</strong>
-       &nbsp; SUP/ETC: &nbsp; <strong style="color: green;" class="btc_sup">0.05134000</strong>/<strong style="color: green;" class="btc_etc">0.00013000 </strong> &nbsp; <strong style="color: blue">|</strong>  &nbsp; SUPERNEUM PRICE: &nbsp; <strong style="color: green;" class="btc_sup">0.000551 </strong>&nbsp;BTC/SUP
+      $ <strong style="color: green;" class="usd_sup"> 0.05134000</strong> &nbsp; <strong style="color: blue">|</strong>
+       &nbsp; SUP/ETH: &nbsp; <strong style="color: green;" class="btc_sup">0.05134000</strong>/<strong style="color: green;" class="btc_eth">0.00013000 </strong> &nbsp; <strong style="color: blue">|</strong>  &nbsp; SUPERNEUM PRICE: &nbsp; <strong style="color: green;" class="btc_sup">0.000551 </strong>&nbsp;BTC/SUP
         &nbsp;<strong style="color: blue">|</strong> &nbsp; DAPPS: &nbsp; <img src="assets/images/pokereum-icon.png" height="22px" width="20px"> POKEREUM &nbsp;<img src="assets/images/dappserysymbolmedium.png" height="20px" width="20px">&nbsp;DAPPSERY &nbsp; <strong style="color: blue">|</strong>&nbsp;
-       <img src="assets/images/etc-logo.png" height="20px" width="25px" alt="">
-       ETC: &nbsp;
-       <strong style="color: green;" class="btc_etc"> 0.00013000</strong>  &nbsp; <strong style="color: blue">|</strong>&nbsp;&nbsp;
+       <img src="assets/images/eth-logo.png" height="20px" width="25px" alt="">
+       ETH: &nbsp;
+       <strong style="color: green;" class="btc_eth"> 0.00013000</strong> BTC &nbsp; <strong style="color: blue">|</strong>&nbsp;&nbsp;
        © 2016 SuperDAO. &nbsp;All rights reserved &nbsp; <strong style="color: blue">|</strong>
      </div>
    </div>
@@ -953,18 +951,18 @@ requestAnimationFrame(update);;
 prices = {
   btc_sup:0.000551,
   usd_sup: '',
-  sup_etc: '',
-  btc_etc: 0.001319,
+  sup_eth: '',
+  btc_eth: 0.01432806,
   usd_btc: 682.9,
   mkt_cap: '',
 }
 
 function updatePrices(){
   var newprices = {};
-    newprices.btc_etc = prices.btc_etc;
+    newprices.btc_eth = prices.btc_eth;
     newprices.btc_sup = prices.btc_sup;
     newprices.usd_btc = prices.usd_btc;
-    newprices.sup_etc = parseFloat((prices.btc_sup/prices.btc_etc).toFixed(6));
+    newprices.sup_eth = parseFloat((prices.btc_sup/prices.btc_eth).toFixed(6));
     newprices.usd_sup = parseFloat((prices.usd_btc*prices.btc_sup).toFixed(4));
     newprices.mkt_cap = parseInt((100000000*newprices.usd_sup).toFixed(0));
 
@@ -985,14 +983,14 @@ function updatePrices(){
 
 function getPrices(){
   var err=0;
-  $.get('https://www.cryptocompare.com/api/data/price?fsym=ETC&tsyms=BTC')
+  $.get('https://www.cryptocompare.com/api/data/price?fsym=ETH&tsyms=BTC')
   .then(
     function(d){
         if(Object.keys(d.Data).length <1){
           err++
           return;
         }
-        prices.btc_etc = parseFloat(d.Data[0].Price).toFixed(6)
+        prices.btc_eth = parseFloat(d.Data[0].Price).toFixed(6)
 
         $.get('https://www.cryptocompare.com/api/data/price?fsym=BTC&tsyms=USD')
         .then(
@@ -1061,7 +1059,7 @@ $(document)
 
 
 <!-- For Audio control -->
-<script type="text/javascript" src="js/vendor.js"></script> 
+<script type="text/javascript" src="js/vendor.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
 </body>
