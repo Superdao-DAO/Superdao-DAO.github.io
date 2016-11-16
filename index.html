@@ -761,7 +761,7 @@ Dappsery is a decentralized self serve dapp ad platform with a triple entry frau
       &nbsp;Total Tokens: &nbsp; <strong style="color: green;">100,000,000.00</strong> &nbsp;<strong style="color: blue">|</strong>
        &nbsp; Price: &nbsp;
       $ <strong style="color: green;" class="usd_sup"> 0.05134000</strong> &nbsp; <strong style="color: blue">|</strong>
-       &nbsp; SUP/ETH: &nbsp; <strong style="color: green;" class="btc_sup">0.05134000</strong>/<strong style="color: green;" class="btc_eth">0.00013000 </strong> &nbsp; <strong style="color: blue">|</strong>  &nbsp; SUPERNEUM PRICE: &nbsp; <strong style="color: green;" class="btc_sup">0.000551 </strong>&nbsp;BTC/SUP
+       &nbsp; SUP/ETH: &nbsp; <strong style="color: green;" class="sup_eth">0.05134000</strong>&nbsp; <strong style="color: blue">|</strong>  &nbsp; SUPERNEUM PRICE: &nbsp; <strong style="color: green;" class="btc_sup">0.000551 </strong>&nbsp;BTC/SUP
         &nbsp;<strong style="color: blue">|</strong> &nbsp; DAPPS: &nbsp; <img src="assets/images/pokereum-icon.png" height="22px" width="20px"> POKEREUM &nbsp;<img src="assets/images/dappserysymbolmedium.png" height="20px" width="20px">&nbsp;DAPPSERY &nbsp; <strong style="color: blue">|</strong>&nbsp;
        <img src="assets/images/eth-logo.png" height="20px" width="25px" alt="">
        ETH: &nbsp;
@@ -952,6 +952,7 @@ prices = {
   btc_sup:0.000551,
   usd_sup: '',
   sup_eth: '',
+  eth_sup: '',
   btc_eth: 0.01432806,
   usd_btc: 682.9,
   mkt_cap: '',
@@ -963,6 +964,7 @@ function updatePrices(){
     newprices.btc_sup = prices.btc_sup;
     newprices.usd_btc = prices.usd_btc;
     newprices.sup_eth = parseFloat((prices.btc_sup/prices.btc_eth).toFixed(6));
+    newprices.eth_sup = parseFloat((prices.btc_eth/prices.btc_sup).toFixed(6));
     newprices.usd_sup = parseFloat((prices.usd_btc*prices.btc_sup).toFixed(4));
     newprices.mkt_cap = parseInt((100000000*newprices.usd_sup).toFixed(0));
 
