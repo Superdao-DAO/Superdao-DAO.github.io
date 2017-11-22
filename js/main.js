@@ -38,7 +38,7 @@ ie10 viewport fix
         )
       )
       document.querySelector('head').appendChild(msViewportStyle)
-    }
+    };
   })();
 
 /*==============================================================================
