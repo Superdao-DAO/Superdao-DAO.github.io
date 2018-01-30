@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dust_Animation</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/superdao-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <!-- <embed src="music/AgeOfTechnology.mp3" autostart="true" loop="true" width="0px" height="0px" id="background_music"> -->
+    <button class="header__bars menu-btn hidden-lg hidden-md" type="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div id="page-wrap">
+        <div class="sections-wrap__overflow"></div>
+        <nav class="nav" id="nav">
+            <div class="nav__table" id="nav__table">
+                <ul>
+                    <li class="active"><a href="#About">ABOUT</a></li>
+                    <li><a href="#Roadmap">ROADMAP</a></li>
+                    <li><a href="#Token_allocation">TOKEN ALLOCATION</a></li>
+                    <li><a href="#Token">TOKEN</a></li>
+                    <li><a href="#Dapps">DAPPS</a></li>
+                    <li><a href="#Pre_ico">PRE-ICO</a></li>
+                    <li><a href="#Governance">GOVERNANCE</a></li>
+                    <li><a href="#Bounties">BOUNTIES</a></li>
+                    <li><a href="#Team">TEAM</a></li>
+                    <li><a href="#Partners">PARTNERS</a></li>
+                    <li><a href="#Faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="second_nav" id="second_nav">
+                <div class="second_nav_item">
+                    <div class="btn_corner btn_corner-tl"></div>
+                    <div class="btn_corner btn_corner-tr"></div>
+                    <div class="btn_corner btn_corner-br"></div>
+                    <div class="btn_corner btn_corner-bl"></div>
+                    <div class="item_icon">
+                        <img src="img/speech-bubble-icon.png" style="margin-top: 10px;">
+                    </div>
+                    <div class="item_text">Have a question? You can <a href="#">chat with us</a> below real quick</div>
+                </div>
+                <div class="second_nav_item">
+                    <div class="btn_corner btn_corner-tl"></div>
+                    <div class="btn_corner btn_corner-tr"></div>
+                    <div class="btn_corner btn_corner-br"></div>
+                    <div class="btn_corner btn_corner-bl"></div>
+                    <div class="item_icon">
+                        <img src="img/envelope-icon.png" style="margin-top: 10px;">
+                    </div>
+                    <div class="item_text">You can also <a href="#">contact our support</a> for more details.</div>
+                </div>
+            </div>
+        </nav>
+        <header class="header hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="#About" class="header__logo">
+                            <img src="img/superdao-logo.png" alt="" class="header__logo__img">
+                            <span class="header__logo__descr">Efficient, tiered & reputation<br>DAO Governance Framework</span>
+                        </a>
+                        <div class="header__right">
+                            <a href="https://blog.superdao.io/" class="Whitepaper"><span class="sp-ico-doc"></span>Whitepaper</a>
+                            <a href="http://www.t.me/superdaohq" class="header__auth header__demo">Community</a>
+                            <a href="faqContent.html" class="header__auth header__demo">FAQ</a>
+                        </div>
+                        <audio id="main_audio" autoplay="autoplay" preload="auto" loop="loop">
+                            <source src="music/AgeOfTechnology.mp3" type="audio/ogg">
+                            <embed id="background_music" autostart="true" loop="true" width="0" height="0" src="music/AgeOfTechnology.mp3" />
+                        </audio>
+                        <a class="music_btn" id="on_off">off</a>
+                        <audio id="bg_music">
+                            <source src="music/bg_music.mp3" type="audio/ogg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <footer class="footer hidden-sm hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-5 text-left">
+                        <div class="footer__copyright">
+                            <a href=""><img src="img/chat-button.png" class="chat-button"></a>
+                            <span style="margin-left: 15px;">Chat with us</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 text-center">
+                        <div class="bounties">
+                            <div class="btn_link">
+                                <div class="btn_corner btn_corner-tl"></div>
+                                <div class="btn_corner btn_corner-tr"></div>
+                                <div class="btn_corner btn_corner-br"></div>
+                                <div class="btn_corner btn_corner-bl"></div>
+                                <div class="bounty">
+                                    <a href="" target="_blank" class="bounties_btn">Bounties</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                        <div class="footer__soc">
+                            <a href="http://www.t.me/superdaohq" target="_blank"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                            <a href="https://blog.superdao.io/" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/superdaohq" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/superdaohq" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.reddit.com/r/SuperDao/" target="_blank"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/company/superdao/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="margin-top: 30px;">
+                    <div class="footer-corner footer-corner-l"></div>
+                    <div class="footer-corner footer-corner-r"></div>
+                    <div class="brack">
+                        <marquee>
+                            <img src="img/superdao-logo.png" class="footer-img">
+                            <span>SUPERNEUM  Market Cap:</span>
+                            <span class="footer-value">$ ...</span>
+                            <span class="footer-divide">|</span>
+                            <span>Total Tokens:</span>
+                            <span class="footer-value">100,000,000.00</span>
+                            <span class="footer-divide">|</span>
+                            <span>Price:</span>
+                            <span class="footer-value">$ 46.7986</span>
+                            <span class="footer-divide">|</span>
+                            <span>SUP:</span>
+                            <span class="footer-value">0.0465617596 </span>ETH
+                            <span class="footer-divide">|</span>
+                            <span>SUPERNEUM PRICE:</span>
+                            <span class="footer-value">0.004181246012080001 </span>BTC/SUP
+                            <span class="footer-divide">|</span>
+                            <img src="" class="footer-img">
+                            <span>ETH:</span>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </footer>
+    <canvas id="page-bg-2" class="page-bg" style="display: none;"></canvas>
+    <div id="webgl-container">
+        <canvas id="webgl-canvas" class="s_1__bg" style="background: url('img/primary-background.jpg')"></canvas>
+    </div>
+    <div id="fullpage" class="sections-wrap">
+        <!-- About -->
+        <section class="section s_1 head-home">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 class="s_1__h">SuperDAO An EffICIENT<br> DECENTRALIZED AUTONOMOUS ORGANIZATION FRAMEWORK</h1>
+                        <div class="s_1__countdown__title">SuperDAO produces viable DApps by enabling collaboration of innovators, individuals and communities achieve common goals through decentralized governance as Superneum (SUP) token holders. Dapps produced provide the highest value possible to end users, consequently providing high yield, perpetual rewards ("Profits) to Superneum SUP token holders.</div>
+                        <div class="clearfix"></div>
+                        <div class="s_1__links">
+                            <div class="btn_link">
+                                <div class="btn_corner btn_corner-tl"></div>
+                                <div class="btn_corner btn_corner-tr"></div>
+                                <div class="btn_corner btn_corner-br"></div>
+                                <div class="btn_corner btn_corner-bl"></div>
+                                <!-- <div class="btn_border btn_border-top-bottom"></div>
+                    <div class="btn_border btn_border-left-right"></div> -->
+                                <a href="https://docs.superdao.io/" target="_blank" class="header__auth header__demo" style="margin-left: 0px !important;">Documentation</a>
+                            </div>
+                            <div class="btn_link" style="margin-left: 20px;">
+                                <div class="btn_corner btn_corner-tl"></div>
+                                <div class="btn_corner btn_corner-tr"></div>
+                                <div class="btn_corner btn_corner-br"></div>
+                                <div class="btn_corner btn_corner-bl"></div>
+                                <!-- <div class="btn_border btn_border-top-bottom"></div>
+                    <div class="btn_border btn_border-left-right"></div> -->
+                                <a href="https://claim.superdao.io/" target="_blank" class="header__auth header__demo" style="margin-left: 0px !important;">Participate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- RoadMap -->
+        <section class="section s_2 head-home">
+            <canvas id="page-bg-2" class="page-bg"></canvas>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10">
+                        <h2 class="s_title" data-before="Roadmap">Roadmap</h2>
+                        <div class="s_2__timeline">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 857.18 111.15">
+                                <path class="cls-1" d="M1460,535l-19.08-18.16a97.07,97.07,0,0,0-130.56-3L1286,535l-21.56,20A94.58,94.58,0,0,1,1139,557.86l-5.54-4.69a237.73,237.73,0,0,1-38.13-40.85l-7.9-10.76A74.61,74.61,0,0,0,970.79,497l-21,24.4a155,155,0,0,1-26.33,24.21l-10.93,7.94a101.9,101.9,0,0,1-117.92,1.29L766,535l-8.11-5a120.16,120.16,0,0,0-38.29-15.43,167.26,167.26,0,0,0-42.5-3.29,148.23,148.23,0,0,0-65,19.13L604,535" transform="translate(-603.51 -470.09)" />
+                                <path class="cls-2" d="M1460,535l-19.08-18.16a97.07,97.07,0,0,0-130.56-3L1286,535l-21.56,20A94.58,94.58,0,0,1,1139,557.86l-5.54-4.69a237.73,237.73,0,0,1-38.13-40.85l-7.9-10.76A74.61,74.61,0,0,0,970.79,497l-21,24.4a155,155,0,0,1-26.33,24.21l-10.93,7.94a101.9,101.9,0,0,1-117.92,1.29L766,535l-8.11-5a120.16,120.16,0,0,0-38.29-15.43,167.26,167.26,0,0,0-42.5-3.29,148.23,148.23,0,0,0-65,19.13L604,535" transform="translate(-603.51 -470.09)" />
+                            </svg>
+                            <div class="s_2__timeline__block">
+                                <a href="#s_2__tab-1" class="s_2__timeline__year s_2__timeline__year-1">
+                                    <div class="s_2__timeline__checkbox checked"></div>
+                                    <div class="s_2__timeline__label">2014</div>
+                                </a>
+                                <div class="s_2__timeline__table hidden-lg hidden-md hidden-sm">
+                                    <div class="s_2__timeline__table__wrap">
+                                        <div class="d-table">
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>May – June</strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>July – September </strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>October – December</strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_2__timeline__block">
+                                <a href="#s_2__tab-2" class="s_2__timeline__year s_2__timeline__year-2">
+                                    <div class="s_2__timeline__checkbox checked"></div>
+                                    <div class="s_2__timeline__label">2015</div>
+                                </a>
+                                <div class="s_2__timeline__table hidden-lg hidden-md hidden-sm">
+                                    <div class="s_2__timeline__table__wrap">
+                                        <div class="d-table">
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>January – May</strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>June – August </strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>September – November</strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>December</strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_2__timeline__block">
+                                <a href="#s_2__tab-3" class="s_2__timeline__year s_2__timeline__year-3">
+                                    <div class="s_2__timeline__checkbox checked"></div>
+                                    <div class="s_2__timeline__label">2016</div>
+                                </a>
+                                <div class="s_2__timeline__table hidden-lg hidden-md hidden-sm">
+                                    <div class="s_2__timeline__table__wrap">
+                                        <div class="d-table">
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>January – May</strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>June </strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>June – July</strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>August – September</strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>October</strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>November - December</strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_2__timeline__block">
+                                <a href="#s_2__tab-4" class="s_2__timeline__year s_2__timeline__year-4 active">
+                                    <div class="s_2__timeline__checkbox checked"></div>
+                                    <div class="s_2__timeline__label">2017</div>
+                                </a>
+                                <div class="s_2__timeline__table hidden-lg hidden-md hidden-sm">
+                                    <div class="s_2__timeline__table__wrap">
+                                        <div class="d-table">
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>January-February</strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>April</strong>
+                                                <br>Lorem Ipsum
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>July </strong>
+                                                <br>Lorem Ipsum
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>October</strong>
+                                                <br>Lorem Ipsum
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>November - December</strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_2__timeline__block">
+                                <a href="#s_2__tab-5" class="s_2__timeline__year s_2__timeline__year-5">
+                                    <div class="s_2__timeline__checkbox checked"></div>
+                                    <div class="s_2__timeline__label">2018</div>
+                                </a>
+                                <div class="s_2__timeline__table hidden-lg hidden-md hidden-sm">
+                                    <div class="s_2__timeline__table__wrap">
+                                        <div class="d-table">
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>January</strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>March</strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>September </strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>December</strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_2__timeline__block">
+                                <a href="#s_2__tab-6" class="s_2__timeline__year s_2__timeline__year-6">
+                                    <div class="s_2__timeline__checkbox"></div>
+                                    <div class="s_2__timeline__label">2019</div>
+                                </a>
+                                <div class="s_2__timeline__table hidden-lg hidden-md hidden-sm">
+                                    <div class="s_2__timeline__table__wrap">
+                                        <div class="d-table">
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>February</strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                            <div class="d-table-cell s_2__tabs__col">
+                                                <strong>April </strong>
+                                                <br>Lorem Ipsum
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s_2__tabs hidden-xs">
+                            <div class="s_2__tab" id="s_2__tab-1" style="display: none">
+                                <div class="d-table">
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>May – June</strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>July – September </strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>October – December</strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_2__tab" id="s_2__tab-2" style="display: none">
+                                <div class="d-table">
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>January – May</strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>June – August </strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>September – November</strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>December</strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_2__tab" id="s_2__tab-3" style="display: none">
+                                <div class="d-table">
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>January – May</strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>June </strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>June – July</strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>August – September</strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>October</strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>November - December </strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_2__tab" id="s_2__tab-4">
+                                <div class="d-table">
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>January-February</strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>April</strong>
+                                        <br>Lorem Ipsum
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>July </strong>
+                                        <br>Lorem Ipsum
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>October</strong>
+                                        <br>Lorem Ipsum
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>November - December</strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_2__tab" id="s_2__tab-5" style="display: none">
+                                <div class="d-table">
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>January</strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>March</strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>September</strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>December</strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s_2__tab" id="s_2__tab-6" style="display: none">
+                                <div class="d-table">
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>February</strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                    <div class="d-table-cell s_2__tabs__col">
+                                        <strong>April </strong>
+                                        <br>Lorem Ipsum
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Token Allocation -->
+        <section class="section s_3 head-home">
+            <canvas id="page-bg-3" class="page-bg"></canvas>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="s_title" data-before="TOKEN ALLOCATION SCHEDULE">TOKEN ALLOCATION<br>SCHEDULE</h2>
+                        <div class="s_3__sub_title">
+                            <span>PRE ICO: 31.10.2017 - 31.12.2017</span><br>
+                            <span>ICO: 23.01.2018 - 28.02.2018</span>
+                        </div>
+                        <div class="s_3__table">
+                            <ul>
+                                <li>
+                                    <span>LOREM IPSUM:</span>
+                                    <br>
+                                    <strong>Lorem ipsum is a dummy text</strong>
+                                </li>
+                                <li>
+                                    <span>SYMBOL:</span>
+                                    <br>
+                                    <strong>SUP</strong>
+                                </li>
+                                <li>
+                                    <span>LOREM IPSUM:</span>
+                                    <br>
+                                    <strong>3 000 000 000</strong>
+                                </li>
+                                <li>
+                                    <span>LOREM IPSUM:</span>
+                                    <br>
+                                    <strong>$ 0.1-</strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="s_3__structure">
+                            <div class="s_3__structure__legend">
+                                <h4 class="s_title s_3__structure_title">Structure</h4>
+                                <ul class="hidden-xs">
+                                    <li><span style="background-image: url('img/token_structure_icon1.png'); background-size: 16px 16px;"></span><b>Lorem ipsum</b></li>
+                                    <li><span style="background-image: url('img/token_structure_icon2.png'); background-size: 16px 16px;"></span><b>Lorem ipsum</b></li>
+                                    <li><span style="background-image: url('img/token_structure_icon3.png'); background-size: 16px 16px;"></span><b>Lorem ipsum</b></li>
+                                    <li><span style="background-image: url('img/token_structure_icon4.png'); background-size: 16px 16px;"></span><b>Lorem ipsum</b></li>
+                                </ul>
+                            </div>
+                            <div class="s_3__structure__circle">
+                                <svg viewBox="0 0 63.6619772368 63.6619772368">
+                      <circle class="pie1" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+                      <circle class="pie2" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+                      <circle class="pie3" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+                      <circle class="pie4" cx="31.8309886184" cy="31.8309886184" r="15.9154943092" />
+                    </svg>
+                                <div class="s_3__structure__percent s_3__structure__percent-1">32.84%</div>
+                                <div class="s_3__structure__percent s_3__structure__percent-2">28.66%</div>
+                                <div class="s_3__structure__percent s_3__structure__percent-3">19.5%</div>
+                                <div class="s_3__structure__percent s_3__structure__percent-4">19%</div>
+                            </div>
+                            <div class="s_3__structure__legend">
+                                <ul class="hidden-lg hidden-md hidden-sm">
+                                    <li><span style="background-color: #48eadd"></span><b>Token sale</b></li>
+                                    <li><span style="background-color: #48ea8d"></span><b>Miner Funds</b></li>
+                                    <li><span style="background-color: #fff"></span><b>Team, Advisors,<br>Angels, Bounty</b></li>
+                                    <li><span style="background-color: #48afea"></span><b>Cross-sale</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="s_3__discount">
+                            <h3 class="s_title s_3__structure_title">TOKEN PRICE</h3>
+                            <ul class="s_3__discount__params">
+                                <li>
+                                    <div class="s_3__discount__top r1"></div>
+                                    <div class="s_3__discount__progress2">
+                                        <div class="s_3__discount__progress r1"></div>
+                                        <div class="s_3__discount__ok"></div>
+                                    </div>
+                                    <div class="s_3__discount__label">1 round first 75 mln MRK</div>
+                                </li>
+                                <li>
+                                    <div class="s_3__discount__top r2"></div>
+                                    <div class="s_3__discount__progress2">
+                                        <div class="s_3__discount__progress r2"></div>
+                                        <div class="s_3__discount__ok"></div>
+                                    </div>
+                                    <div class="s_3__discount__label">2 round 75 mln-195 mln MRK</div>
+                                </li>
+                                <li>
+                                    <div class="s_3__discount__top r3"></div>
+                                    <div class="s_3__discount__progress2">
+                                        <div class="s_3__discount__progress r3"></div>
+                                        <div class="s_3__discount__ok"></div>
+                                    </div>
+                                    <div class="s_3__discount__label">3 round 195 mln-435 mln MRK</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Token -->
+        <section class="section s_4 head-home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="s_title" data-before="about">TOKEN</h2>
+                        <div id="s_2__tab-1" class="s_4___tab">
+                            <div class="s_4__wrap d-table">
+                                <div class="s_4_1__video__corner s_4_1__video__corner-tr hidden-xs"></div>
+                                <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-xs"></div>
+                                <ul class="s_4__nav d-table-cell hidden-xs">
+                                    <li class="active">
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_2__tab-2-1">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_2__tab-2-2">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_2__tab-2-3">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_2__tab-2-4">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_2__tab-2-5">LOREM IPSUM</a>
+                                    </li>
+                                </ul>
+                                <div class="s_4__text d-table-cell">
+                                    <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-xs"></div>
+                                    <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-xs"></div>
+                                    <div class="s_4__tab active" id="s_2__tab-2-1">
+                                        <a href="#s_2__tab-2-1" class="hidden-lg hidden-md hidden-sm s_4__tab__title">ABOUT</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_2__tab-2-2" style="display: none;">
+                                        <a href="#s_2__tab-2-2" class="hidden-lg hidden-md hidden-sm s_4__tab__title">VIRTUAL REALITY</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_2__tab-2-3" style="display: none;">
+                                        <a href="#s_2__tab-2-3" class="hidden-lg hidden-md hidden-sm s_4__tab__title">E-COMMERCE</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_2__tab-2-4" style=" display: none;">
+                                        <a href="#s_2__tab-2-4" class="hidden-lg hidden-md hidden-sm s_4__tab__title">BLOCKCHAIN</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_2__tab-2-5" style=" display: none;">
+                                        <a href="#s_2__tab-2-5" class="hidden-lg hidden-md hidden-sm s_4__tab__title">SOCIAL NETWORKS AND THE BLOGOSPHERE</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Dapps -->
+        <section class="section s_4 head-home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="s_title" data-before="about">DAPPS</h2>
+                        <div id="s_2__tab-1" class="s_4___tab">
+                            <div class="s_4__wrap d-table">
+                                <div class="s_4_1__video__corner s_4_1__video__corner-tr hidden-xs"></div>
+                                <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-xs"></div>
+                                <ul class="s_4__nav d-table-cell hidden-xs">
+                                    <li class="active">
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_5__tab-5-1">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_5__tab-5-2">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_5__tab-5-3">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_5__tab-5-4">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_5__tab-5-5">LOREM IPSUM</a>
+                                    </li>
+                                </ul>
+                                <div class="s_4__text d-table-cell">
+                                    <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-xs"></div>
+                                    <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-xs"></div>
+                                    <div class="s_4__tab active" id="s_5__tab-5-1">
+                                        <a href="#s_5__tab-5-1" class="hidden-lg hidden-md hidden-sm s_4__tab__title">ABOUT</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_5__tab-5-2" style="display: none;">
+                                        <a href="#s_5__tab-5-2" class="hidden-lg hidden-md hidden-sm s_4__tab__title">VIRTUAL REALITY</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_5__tab-5-3" style="display: none;">
+                                        <a href="#s_5__tab-5-3" class="hidden-lg hidden-md hidden-sm s_4__tab__title">E-COMMERCE</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_5__tab-5-4" style=" display: none;">
+                                        <a href="#s_5__tab-5-4" class="hidden-lg hidden-md hidden-sm s_4__tab__title">BLOCKCHAIN</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_5__tab-5-5" style=" display: none;">
+                                        <a href="#s_5__tab-5-5" class="hidden-lg hidden-md hidden-sm s_4__tab__title">SOCIAL NETWORKS AND THE BLOGOSPHERE</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pre_Sale -->
+        <section class="section s_4 head-home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="s_title" data-before="about">PRE-SALE</h2>
+                        <div id="s_2__tab-1" class="s_4___tab">
+                            <div class="s_4__wrap d-table">
+                                <div class="s_4_1__video__corner s_4_1__video__corner-tr hidden-xs"></div>
+                                <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-xs"></div>
+                                <ul class="s_4__nav d-table-cell hidden-xs">
+                                    <li class="active">
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_6__tab-6-1">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_6__tab-6-2">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_6__tab-6-3">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_6__tab-6-4">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_6__tab-6-5">LOREM IPSUM</a>
+                                    </li>
+                                </ul>
+                                <div class="s_4__text d-table-cell">
+                                    <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-xs"></div>
+                                    <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-xs"></div>
+                                    <div class="s_4__tab active" id="s_6__tab-6-1">
+                                        <a href="#s_6__tab-6-1" class="hidden-lg hidden-md hidden-sm s_4__tab__title">ABOUT</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_6__tab-6-2" style="display: none;">
+                                        <a href="#s_6__tab-6-2" class="hidden-lg hidden-md hidden-sm s_4__tab__title">VIRTUAL REALITY</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_6__tab-6-3" style="display: none;">
+                                        <a href="#s_6__tab-6-3" class="hidden-lg hidden-md hidden-sm s_4__tab__title">E-COMMERCE</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_6__tab-6-4" style=" display: none;">
+                                        <a href="#s_6__tab-6-4" class="hidden-lg hidden-md hidden-sm s_4__tab__title">BLOCKCHAIN</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_6__tab-6-5" style=" display: none;">
+                                        <a href="#s_6__tab-6-5" class="hidden-lg hidden-md hidden-sm s_4__tab__title">SOCIAL NETWORKS AND THE BLOGOSPHERE</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Governance -->
+        <section class="section s_4 head-home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="s_title" data-before="about">GOVERNANCE</h2>
+                        <div id="s_2__tab-1" class="s_4___tab">
+                            <div class="s_4__wrap d-table">
+                                <div class="s_4_1__video__corner s_4_1__video__corner-tr hidden-xs"></div>
+                                <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-xs"></div>
+                                <ul class="s_4__nav d-table-cell hidden-xs">
+                                    <li class="active">
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_7__tab-7-1">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_7__tab-7-2">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_7__tab-7-3">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_7__tab-7-4">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_7__tab-7-5">LOREM IPSUM</a>
+                                    </li>
+                                </ul>
+                                <div class="s_4__text d-table-cell">
+                                    <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-xs"></div>
+                                    <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-xs"></div>
+                                    <div class="s_4__tab active" id="s_7__tab-7-1">
+                                        <a href="#s_7__tab-7-1" class="hidden-lg hidden-md hidden-sm s_4__tab__title">ABOUT</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_7__tab-7-2" style="display: none;">
+                                        <a href="#s_7__tab-7-2" class="hidden-lg hidden-md hidden-sm s_4__tab__title">VIRTUAL REALITY</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_7__tab-7-3" style="display: none;">
+                                        <a href="#s_7__tab-7-3" class="hidden-lg hidden-md hidden-sm s_4__tab__title">E-COMMERCE</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_7__tab-7-4" style=" display: none;">
+                                        <a href="#s_7__tab-7-4" class="hidden-lg hidden-md hidden-sm s_4__tab__title">BLOCKCHAIN</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_7__tab-7-5" style=" display: none;">
+                                        <a href="#s_7__tab-7-5" class="hidden-lg hidden-md hidden-sm s_4__tab__title">SOCIAL NETWORKS AND THE BLOGOSPHERE</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Bounties -->
+        <section class="section s_4 head-home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="s_title" data-before="about">BOUNTIES</h2>
+                        <div id="s_2__tab-1" class="s_4___tab">
+                            <div class="s_4__wrap d-table">
+                                <div class="s_4_1__video__corner s_4_1__video__corner-tr hidden-xs"></div>
+                                <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-xs"></div>
+                                <ul class="s_4__nav d-table-cell hidden-xs">
+                                    <li class="active">
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_8__tab-8-1">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_8__tab-8-2">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_8__tab-8-3">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_8__tab-8-4">LOREM IPSUM</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_8__tab-8-5">LOREM IPSUM</a>
+                                    </li>
+                                </ul>
+                                <div class="s_4__text d-table-cell">
+                                    <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-xs"></div>
+                                    <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-xs"></div>
+                                    <div class="s_4__tab active" id="s_8__tab-8-1">
+                                        <a href="#s_8__tab-8-1" class="hidden-lg hidden-md hidden-sm s_4__tab__title">ABOUT</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_8__tab-8-2" style="display: none;">
+                                        <a href="#s_8__tab-8-2" class="hidden-lg hidden-md hidden-sm s_4__tab__title">VIRTUAL REALITY</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_8__tab-8-3" style="display: none;">
+                                        <a href="#s_8__tab-8-3" class="hidden-lg hidden-md hidden-sm s_4__tab__title">E-COMMERCE</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_8__tab-8-4" style=" display: none;">
+                                        <a href="#s_8__tab-8-4" class="hidden-lg hidden-md hidden-sm s_4__tab__title">BLOCKCHAIN</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                    <div class="s_4__tab" id="s_8__tab-8-5" style=" display: none;">
+                                        <a href="#s_8__tab-8-5" class="hidden-lg hidden-md hidden-sm s_4__tab__title">SOCIAL NETWORKS AND THE BLOGOSPHERE</a>
+                                        <div class="d-table">
+                                            <div class="d-table-cell m_table_cell">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered
+                                                    the undoubtable source. </p>
+                                                <p>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+                                                    during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                                            </div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                            <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Teams -->
+        <section class="section s_8 head-home">
+            <canvas id="page-bg-8" class="page-bg"></canvas>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="s_title" data-before="Team">Teams</h2>
+                        <div class="s_8__wrap">
+                            <div class="s_8__staff_wrap hidden-xs" data-scrolltext="slide right to explore rest of team">
+                                <div class="s_8__staff__card_col">
+                                    <div class="s_8__staff__card">
+                                        <!-- <div class="s_8__staff__letter s_8__staff__letter-fill">Y</div> -->
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="After Stumbling upon bitcoin in 2010 as a solution to micro-payments at his first startup, Ola's journey through crypto currency since then involved research into advanced use of blockchain technology. As an early adopter in Mastercoin, Protoshares, Counterparty, Nxt and finally the expressive Ethereum blockchain, Ola is focused on highly disruptive, consumer facing Dapps. Ola is a US Military veteran with a background in computer science, entrepreneurship and software engineering. Ola hopes to use his attention to detail, rigor and multi-faceted experience to come up with solutions, while initiating and directing user friendly Dapps to disrupt traditional industries unlocking trapped value between users. He is currently the founder of SuperDAO and other Dapps within it.">
+                                                    <img src="img/teams/Ola.png" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="s_8__staff__avatar" title="10-years of experience in e-commerce, 7 years in Investment, 4 years in fashion. Launched projects: RealEstateSoft, Capital-M, Moda Mark"><img class="lazy" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="/img/stuff/Yana_Kontorovich.jpg" alt=""></div> -->
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Oladapo Ajayi</div>
+                                            <div class="s_8__staff__post">
+                                                @Cryptoinnovator
+                                                <br>Founder
+                                            </div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_8__staff__card">
+                                        <!-- <div class="s_8__staff__letter s_8__staff__letter-border">D</div> -->
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Patrick Mazzotta is a twenty year veteran in the BI and data warehousing space. He brings a passion for data driven game theory and experience in various forms of mathematical modeling (especially in gaming and advertising). Patrick may be one of the older members of the SuperDAO team, but he's not above childish fun and looking for humor in any situation. Patrick hopes to bring some mathematical rigor and high level strategy to the SuperDAO team. As one of the earliest members of the team, he’ll be a key player in helping to shape the initial DAO..">
+                                                    <img src="img/teams/Patrick.png" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Patrick Mazotta</div>
+                                            <div class="s_8__staff__post">@Patrickgamer
+                                                <br>Co-Founder
+                                            </div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_8__staff__card_col">
+                                    <div class="s_8__staff__card">
+                                        <!-- <div class="s_8__staff__letter s_8__staff__letter-border">E</div> -->
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="New Digital Media Entrepreneur/ Social Media Marketing and blockchain enthusiast. Chief Organizer at Superdao.">
+                                                    <img src="img/teams/Jermaine.jpg" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Jermaine Encarnacion </div>
+                                            <div class="s_8__staff__post">@Jacelace<br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_8__staff__card">
+                                        <!-- <div class="s_8__staff__letter s_8__staff__letter-fill">V</div> -->
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="C, C++, Python, Java, JS, Perl, PHP, Solidity programmer, Certified Ethical Hacker, Penetration tester, nation-wide cyberwar games, Former Greek Ministry of Health Security Advisor. Linux oriented systems, mysql databases, firewall tuning/testing, architecture design. Generalist developer at superdao Pokereum & smart contract developer and security auditsInformation Security Specialist - PHP - MySQL - C - C++ - Python - Javascript Developer.">
+                                                    <img src="img/teams/Panos.png" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Panos Papantoniou </div>
+                                            <div class="s_8__staff__post">@Panos
+                                                <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_8__staff__card_col">
+                                    <div class="s_8__staff__card">
+                                        <!-- <div class="s_8__staff__letter s_8__staff__letter-fill">O</div> -->
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Software and web developer for 10 years with demonstrated expertise in web and realtime applications. Lead UX developer at superdao Pokereum & smart contract developer">
+                                                    <img src="img/teams/Archil.jpg" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Archil Phanchulidze </div>
+                                            <div class="s_8__staff__post">@Archil
+                                                <br>Co-Founder
+                                            </div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_8__staff__card">
+                                        <!-- <div class="s_8__staff__letter s_8__staff__letter-border">V</div> -->
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="PHP developer of over 5 years, Hybrid Android apps developer of over 2 years. With high expectations for the decentralized world and cryptocurrency ,now working with Ethereum and the enviroment to develop astonishing Dapps">
+                                                    <img src="img/teams/Adibas03.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Anthony Adegbemi </div>
+                                            <div class="s_8__staff__post">@Adibas03
+                                                <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_8__staff__card_col">
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Yemi is a Fullstack Software Engineer. His experience spans from business development to technology entrepreneurship. He has worked in and founded startups in industries like ecommerce/marketplace,New media,finance,hospitality and building online communities. He became interested in the application of Blockchain Technology after seeing how much impact it could have in emerging markets.He now develops disruptive technologies on the ethereum blockchain.">
+                                                    <img src="img/teams/yemi.jpg" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Babayemi Olulana </div>
+                                            <div class="s_8__staff__post">@Coderwithattitude
+                                                <br>Co-Founder
+                                            </div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Software developer with 10+ experience in several industries. He is well versed in distributed server and client-server applications and web applications. He also has expertise  in econometrics and statistical analysis with machine learning, data analysis and data mining. He is keen on the Ethereum blockchain related technologies bringing that enthusiasm with Software and smart contract development to SuperDAO and the Pokereum projects respectively.">
+                                                    <img src="img/teams/mike.jpg" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Mikhail Slabodzich </div>
+                                            <div class="s_8__staff__post">@mike <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_8__staff__card_col">
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title='People call him a "Code Warrior". Sohail has a strong full-stack architectural skill set. He has worked with Fortune 500 companies as well as several Startups. Some of his most prominent works include building the core of a stock brokerage system with low latency APIs with unparalleled scalability, working as a core R&D team member involved in developing 4G telecom services etc. His strong suits are Java, NodeJs (JavaScript), TypeScript, AngularJS, and much more. He loves socket programming, API development and is crazy about good documentations. However, he does not consider himself a nerd because he does not code in vi editor. He is one of the earlier founding members of Pokereum and will play a major role in bringing SuperDAO to life.'>
+                                                    <img src="img/teams/sohail.jpg" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Sohail Alam</div>
+                                            <div class="s_8__staff__post">@Salam <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Esco is a Senior Software Engineer in NYC. His favorite languages are Javascript and Go which he uses to build real-time media applications, social networks, and services that scale to millions of users. He’s held roles at top companies such as The New York Times, Forbes, and Uber. Throughout his career, he’s also worked for a few early stage startups in varying roles from founder, first employee and consultant. He is an active member in the open source community with contributions to major projects including Superdao, Pokereum and various personal projects. He continues his passion for open source by helping define best practices for maintaining codebases that have contributions from a distributed team such as automated testing, development workflow, and code structure.">
+                                                    <img src="img/teams/esco.jpeg" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Esco Obong </div>
+                                            <div class="s_8__staff__post">@esco <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_8__staff__card_col">
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Esco is a Senior Software Engineer in NYC. His favorite languages are Javascript and Go which he uses to build real-time media applications, social networks, and services that scale to millions of users. He’s held roles at top companies such as The New York Times, Forbes, and Uber. Throughout his career, he’s also worked for a few early stage startups in varying roles from founder, first employee and consultant. He is an active member in the open source community with contributions to major projects including Superdao, Pokereum and various personal projects. He continues his passion for open source by helping define best practices for maintaining codebases that have contributions from a distributed team such as automated testing, development workflow, and code structure.">
+                                                    <img src="img/teams/Aaron.png" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Aaron Vasquez </div>
+                                            <div class="s_8__staff__post">@Aaron <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Cristian has extensive frontend and backend experience. He helped the New York Times reinvent its video player and mobile site. As a reactjs ninja he works together with other reactjs developers within SuperDAO to enhance and optimize user experiences within real time decentralized applications.">
+                                                    <img src="img/teams/Cristian.png" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Cristian </div>
+                                            <div class="s_8__staff__post">@Cristian <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_8__staff__card_col">
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Edmund has years of experience in rapid MVP development from the ground up for both web and mobile using reacts for real time apps. His most recent projects have been in peer-to-peer video platforms in both social networking and education, and believes Ethereum will be the future of disruptive P2P applications. His enthusiasm for web3 possibilities fuel his drive in development at SuperDAO. In his free time he loves learning languages and is actively realizing his dream to be trilingual.">
+                                                    <img src="img/teams/Edmundmai_360.png" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Edmund Mai</div>
+                                            <div class="s_8__staff__post">@Edmund <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title='Node.js, AngularJS and Android applications developer. Started the career out of university as an Android developer but soon developed interest for back-end technologies. He has been working with Node.js for about an year now writing RestAPIs and Cron-Jobs. Worked as AngularJS developer for a short time. Also has an interest in data scraping field. Database expertise include MongoDB and MySQL. Recently, he has stumbled across the idea of Dapps, Ethereum blockchain and smart contracts and choose to venture into this field with SuperDAO real-time Dapps.'>
+                                                    <img src="img/teams/Sheraz.jpg" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Sheraz Arshad </div>
+                                            <div class="s_8__staff__post">@Sheraz <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_8__staff__card_col">
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Software Engineer with more than 10 years experience in ICT field. Tim has large experience in mobile online payments, Network architectures and Telco value added services. He started the new venture of crypto currencies in 2014 and currently working on large scaled Ethereum distributed application with SuperDAO after acquiring a relevant experience as a full stack developer. Javascript-React and python-Django are its favorite development language.">
+                                                    <img src="img/teams/Tim.png" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Hatim Khomsi</div>
+                                            <div class="s_8__staff__post">@Tim <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Software Engineer with more than 10 years experience in ICT field. Tim has large experience in mobile online payments, Network architectures and Telco value added services. He started the new venture of crypto currencies in 2014 and currently working on large scaled Ethereum distributed application with SuperDAO after acquiring a relevant experience as a full stack developer. Javascript-React and python-Django are its favorite development language.">
+                                                    <img src="img/teams/Olufunso.png" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Olufunso Ekundayo</div>
+                                            <div class="s_8__staff__post">@Olufunso <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_8__staff__card_col">
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Software Engineer with more than 10 years experience in ICT field. Tim has large experience in mobile online payments, Network architectures and Telco value added services. He started the new venture of crypto currencies in 2014 and currently working on large scaled Ethereum distributed application with SuperDAO after acquiring a relevant experience as a full stack developer. Javascript-React and python-Django are its favorite development language.">
+                                                    <img src="img/teams/Ayeni.png" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Ayeni</div>
+                                            <div class="s_8__staff__post">@Ayeni <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Ugo is a UI/UX designer with experience designing and prototyping layouts for web and mobile apps with Sketch, InvisionApp, Sublime Text. He has more than 4 years of working experience as a Product Designer. And 7+ years writing CSS for large applications. He brings a high acuity to conceptualize and implement engaging and highly-aesthetic designs that transforms brands to SuperDAO.">
+                                                    <img src="img/teams/Ugo.png" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Ugo Ifezue</div>
+                                            <div class="s_8__staff__post">@Ugo <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_8__staff__card_col">
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Ugo is a UI/UX designer with experience designing and prototyping layouts for web and mobile apps with Sketch, InvisionApp, Sublime Text. He has more than 4 years of working experience as a Product Designer. And 7+ years writing CSS for large applications. He brings a high acuity to conceptualize and implement engaging and highly-aesthetic designs that transforms brands to SuperDAO.">
+                                                    <img src="img/teams/dummy.png" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Ifeoluwa King</div>
+                                            <div class="s_8__staff__post">@Ifeoluwa <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Software Programmer with 4 years experience in software/application development. Linux geek, loves all things open source, math/physics enthusiast, rock and alternative rock lover, rustacean. You'll find him researching the bleeding edge of tech, a major reason he is now onboard with SuperDAO.">
+                                                    <img src="img/teams/Seun.png" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Seun lanlege</div>
+                                            <div class="s_8__staff__post">@Seun <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_8__staff__card_col">
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Software / DevOps Engineer, “building scalable distributed infrastructur is what keeps me up at night”. Working to improve and deliver working infrastructure within SuperDAO’s systems.">
+                                                    <img src="img/teams/Samuel.png" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Samuel Omidiora</div>
+                                            <div class="s_8__staff__post">@Samuel <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="A Techpreneur with strong interest in Blockchain, Mobile, Web and IoT. Also passionate about ideas that have established 'proof of concept' and value proposition coming to life. Goal-driven with a passion for productivity and human development. CoFounder: Siscomedia and Host of #LagosGeeksTechpreneur Meetup. Over 10 year of industry knowledge on LAMP, Business development tools, SCRUM, Customer Relation Management Systems, Lead generation/User Acquisition, System/Database Administration, New Media, Content Management System, UI/UX, Mobile and Web Apps. B.A in Mass Communication. The idea of incentivized disruptive protocols and future through blockchain and smartcontracts endeared him to join SuperDAO as he plans on bringing his experience to help launch and coordinate disruptive DApps. A Gym and Drone Addict">
+                                                    <img src="img/teams/charles.jpg" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Charles Okarformbah </div>
+                                            <div class="s_8__staff__post">@Charles <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_8__staff__card_col">
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="A developer of roughly 7 years, with skills in mobile and web programming and a certified Chartered Accountant. She has a good interest in blockchain technologies, considering it’s current and potential impact on several systems and economies. This interest led her to join SuperDAO, a DAO she considers profitable and a good organization to meet and work with blockchain developers. Fascinated by the Pokereum, Torrent and Dappsery dapps of SuperDAO, she believes SuperDAO is in a big way, an upcoming force to reckon with, in the industry, and is by no means lagging behind in the technology. She loves reading Christian and Business literature and ministering to people, based on her faith in Christ Jesus.">
+                                                    <img src="img/teams/wunmi.jpg" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Olawunmi George </div>
+                                            <div class="s_8__staff__post">@Olawunmi <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Tosin Akinbobola is a software developer with over 3 years experience in application development using C# and php . He has spent the past one year building single page applications in Javascript. Tosin loves writing code, working with new technologies. He is tenacious and enjoys problem solving. He plays football and loves travelling. He currently works for Superdao on cutting-edge decentralized applications that run on the ethereum blockchain. He plans to grow in his knowledge of software best practices in Solidity and Javascript and use said knowledge to build complex, disruptive Superdao systems and blockchain technologies.">
+                                                    <img src="img/teams/tosin.jpg" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Tosin Akinbobola </div>
+                                            <div class="s_8__staff__post">@Tosin <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_8__staff__card_col">
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="He is fascinated by the immense difference that can be made in the lives of people through CODE. Having spent 6+ years in designing, developing (using PHP, Java, JS, MySQL, MsSQL) and deploying business applications for automating processes at some academic institutions and corporate organizations, he is now focussed on exploiting blockchain technology for creating value. He hopes to leverage its innate potentials in the field of agriculture for which is he is undyingly passionate. @SuperDAO, he is both curious and excited about the game-changing powers of her Dapps and looks to immensely contribute to further development in existing dapps while engaging in R&D towards new product development. Of recent, he is exploring the beauty of frameworks like ReactJS for managing front-end application development tasks. He sees CODE as PROSE.">
+                                                    <img src="img/teams/emmanuel.jpg" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Emmanuel Nwamaife </div>
+                                            <div class="s_8__staff__post">@Emmanuel <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="Michael is a passionate developer with less than a year experience in programming who is willing to learn to improve himself and utilize his intellectual capacity. He has worked in sales and marketing capacities, personally and with a popular online marketplace. He is the founder of Delight Innovative Solutions, an outfit established for the procurement and supply of tech gadgets to her clients.Michael’s love for tech drove him to become a part of the SuperDAO team of blockchain engineers, writing applications in Solidity for the Ethereum platform.He loves reading tech-related news and playing with his arduino during his spare time.">
+                                                    <img src="img/teams/mick.jpg" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Michael edobor </div>
+                                            <div class="s_8__staff__post">@Michael <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s_8__staff__card_col">
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="He has been involved with web based technologies for almost three years, using Neoteric web tools to build performant web applications. He's a Javascript evangelist. A tech enthusiast at heart, always looking to contribute to the creation of improved and innovative web and digital products. He's excited at the limitless capabilities of decentralized applications built on the Ethereum platform and the priceless improvement they bring over traditional web-based applications. He's eager to build decentralized applications within the efficient and decentralized Superdao.He's an avid learner, a futuristic tech lover, a digital nomad, a casual gamer. He's human.">
+                                                    <img src="img/teams/promise.jpg" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Promise Udenkwor</div>
+                                            <div class="s_8__staff__post">@Promise <br>Co-Founder</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s_8__staff__card">
+                                        <div class="profile-border">
+                                            <div class="profile">
+                                                <div class="profile-in s_8__staff__avatar" title="I’m a Digital Artist from Indonesia with over ten years of professional experience in the design industry.I am in the business of creating the most exquisite design outcomes with special attention to detail in context and focus. Ethereum is mindblowing.">
+                                                    <img src="img/teams/Aldi.jpg" alt="" width="100" height="100" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s_8__staff__data">
+                                            <div class="s_8__staff__name">Aldi Andreas</div>
+                                            <div class="s_8__staff__post">@Aldi <br>Rockstar Designer</div>
+                                            <div class="s_8__staff__soc">
+                                                <a href="" class="m_icon" target="_blank"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- mobile stuff -->
+                            <!-- <div class="hidden-lg hidden-md hidden-sm s_8__staff__list-xs">
+                                <div class="s_8__staff__card">
+                                    <div class="s_8__staff__letter s_8__staff__letter-fill">Y</div>
+                                    <div class="s_8__staff__avatar" title="10-years of experience in e-commerce, 7 years in Investment, 4 years in fashion. Launched projects: RealEstateSoft, Capital-M, Moda Mark"><img class="lazy" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="/img/stuff/Yana_Kontorovich.jpg" alt=""></div>
+                                    <div class="s_8__staff__data">
+                                        <div class="s_8__staff__name">Yana Kontorovich</div>
+                                        <div class="s_8__staff__post">CEO & Founder, PhD
+                                            <br>in Economic Sciences.
+                                            <br>Businesswoman, Investor
+                                        </div>
+                                        <div class="s_8__staff__soc">
+                                            <a href="https://www.facebook.com/yana.kontorovitch" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                            <a href="https://www.youtube.com/watch?v=CpG1Hd18PB0" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="text-center">
+                                <button class="s_8__staff__more hidden-lg hidden-md hidden-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 462.088 462.088" style="enable-background:new 0 0 462.088 462.088;" xml:space="preserve" width="25px" height="25px">
+                                        <g>
+                                          <g>
+                                            <g>
+                                              <path d="M417.041,202.182c-7.483,0-13.896-5.345-16.034-12.827     c-18.172-80.171-88.723-136.826-172.101-136.826S74.977,109.184,56.805,189.355c-2.138,8.552-10.689,13.896-19.241,11.758     s-13.896-10.689-11.758-19.241c21.379-95.137,105.826-161.411,203.1-161.411s181.721,66.275,203.1,161.411     c2.138,8.552-3.207,17.103-11.758,19.241C419.179,201.113,418.11,202.182,417.041,202.182z" fill="#FFFFFF" />
+                                            </g>
+                                            <path d="M422.386,206.458c-2.138,0-4.276,0-6.414-1.069l-55.585-23.517    c-8.552-3.207-11.758-12.827-8.552-21.379s12.827-11.758,21.379-8.552l40.62,17.103l17.103-40.62    c3.207-8.552,12.827-11.758,21.379-8.552s11.758,12.827,8.552,21.379l-23.517,55.585c-2.138,4.276-4.276,7.483-8.552,8.552    C426.662,206.458,424.524,206.458,422.386,206.458z" fill="#FFFFFF" />
+                                            <g>
+                                              <path d="M232.113,441.627c-97.274,0-181.721-66.275-203.1-161.411     c-2.138-8.552,3.207-17.103,11.758-19.241s17.103,3.207,19.241,11.758c18.172,80.171,88.723,136.826,172.101,136.826     s153.929-56.654,172.101-136.826c2.138-8.552,10.689-13.896,19.241-11.758s13.896,10.69,11.758,19.241     C413.834,375.352,330.456,441.627,232.113,441.627z" fill="#FFFFFF" />
+                                            </g>
+                                            <path d="M16.185,343.284c-2.138,0-4.276,0-6.414-1.069c-8.552-3.207-11.758-12.827-8.552-21.379    l23.517-55.585c3.207-8.552,12.827-11.758,21.379-8.552l55.585,23.517c8.552,3.207,11.758,12.827,8.552,21.379    c-3.207,8.552-12.827,11.758-21.379,8.552l-40.62-17.103L31.15,332.594C29.013,339.008,22.599,343.284,16.185,343.284z" fill="#FFFFFF" />
+                                          </g>
+                                        </g>
+                                    </svg>Load more
+                                </button>
+                            </div> -->
+                            <!-- end mobile -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Partners -->
+        <section class="section s_9 head-home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="s_9__wrap">
+                            <h2 class="s_title" data-before="Partners">News | Partners</h2>
+                            <div class="s_9__partners ">
+                                <div class="d-table">
+                                    <div class="d-table-row">
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_1"></a>
+                                        </div>
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_4"></a>
+                                        </div>
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_7"></a>
+                                        </div>
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_8"></a>
+                                        </div>
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_9"></a>
+                                        </div>
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_2"></a>
+                                        </div>
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_3"></a>
+                                        </div>
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_5"></a>
+                                        </div>
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_6"></a>
+                                        </div>
+                                    </div>
+                                    <div class="d-table-row">
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_10"></a>
+                                        </div>
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_18"></a>
+                                        </div>
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_12"></a>
+                                        </div>
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_19"></a>
+                                        </div>
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_20"></a>
+                                        </div>
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_21"></a>
+                                        </div>
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_22"></a>
+                                        </div>
+                                        <div class="s_9__partner-cell d-table-cell">
+                                            <a href="" target="_blank" class="sprite-partner s_9__partner sprite-partner_17"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ -->
+        <section class="section s_10 head-home">
+            <canvas id="page-bg-10" class="page-bg"></canvas>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="s_10__descr">
+                            <h2 class="s_title" data-before="Frequently asked questions">Frequently <br>asked <br>questions</h2>
+                            <div class="hidden-xs">
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
+                                <!-- <a href="files/faq/FAQ_en.docx" target="_blank" class="s_10__download Whitepaper"><span class="sp-ico sp-ico-1"></span>Documentation</a> -->
+                                <div class="btn_link" style="margin-top: 20px;">
+                                    <div class="btn_corner btn_corner-tl"></div>
+                                    <div class="btn_corner btn_corner-tr"></div>
+                                    <div class="btn_corner btn_corner-br"></div>
+                                    <div class="btn_corner btn_corner-bl"></div>
+                                    <!-- <a href="" target="_blank" class="header__auth" style="margin-left: 0px !important;"><span class="sp-ico sp-ico-1"></span>Documentation</a>-->
+                                    <a href="" target="_blank" class="s_10__download faq"><span class="sp-ico-faq"></span>Documentation</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s_10__faq">
+                            <ul>
+                                <li class="active">
+                                    <div>
+                                        <h3>What is Lorem Ipsum?</h3>
+                                    </div>
+                                    <div class="s_10__wrap">
+                                        <div class="s_10__video__corner s_10__video__corner-br hidden-xs"></div>
+                                        <div class="s_10__video__corner s_10__video__corner-bl hidden-xs"></div>
+                                        <div style="position: relative;">
+                                            <div class="s_10__video__border s_10__video__border-top-bottom hidden-xs"></div>
+                                            <div class="s_10__video__border s_10__video__border-left-right hidden-xs"></div>
+                                            <div style="margin: 10px 20px 0px 20px;">
+                                                <div class="s_10__faq_content">
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                        <br><br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.
+                                                        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>Why do we use it?</h3>
+                                    </div>
+                                    <div class="s_10__wrap">
+                                        <div class="s_10__video__corner s_10__video__corner-br hidden-xs"></div>
+                                        <div class="s_10__video__corner s_10__video__corner-bl hidden-xs"></div>
+                                        <div style="position: relative;">
+                                            <div class="s_10__video__border s_10__video__border-top-bottom hidden-xs"></div>
+                                            <div class="s_10__video__border s_10__video__border-left-right hidden-xs"></div>
+                                            <div style="margin: 10px 20px 0px 20px;">
+                                                <div class="s_10__faq_content">
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                        <br><br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.
+                                                        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>Where does it come from?</h3>
+                                    </div>
+                                    <div class="s_10__wrap">
+                                        <div class="s_10__video__corner s_10__video__corner-br hidden-xs"></div>
+                                        <div class="s_10__video__corner s_10__video__corner-bl hidden-xs"></div>
+                                        <div style="position: relative;">
+                                            <div class="s_10__video__border s_10__video__border-top-bottom hidden-xs"></div>
+                                            <div class="s_10__video__border s_10__video__border-left-right hidden-xs"></div>
+                                            <div style="margin: 10px 20px 0px 20px;">
+                                                <div class="s_10__faq_content">
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                        <br><br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.
+                                                        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <h3>Where can I get some?</h3>
+                                    </div>
+                                    <div class="s_10__wrap">
+                                        <div class="s_10__video__corner s_10__video__corner-br hidden-xs"></div>
+                                        <div class="s_10__video__corner s_10__video__corner-bl hidden-xs"></div>
+                                        <div style="position: relative;">
+                                            <div class="s_10__video__border s_10__video__border-top-bottom hidden-xs"></div>
+                                            <div class="s_10__video__border s_10__video__border-left-right hidden-xs"></div>
+                                            <div style="margin: 10px 20px 0px 20px;">
+                                                <div class="s_10__faq_content">
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                        <br><br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets.
+                                                        containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/scripts.min.js" async></script>
+</body>
+
+</html>

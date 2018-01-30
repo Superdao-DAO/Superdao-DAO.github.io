@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dust_Animation</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="img/superdao-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .second_nav {
+            display: block;
+            margin: 270px 0px;
+        }
+    </style>
+    <button class="header__bars menu-btn hidden-lg hidden-md" type="button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div id="page-wrap">
+        <div class="sections-wrap__overflow"></div>
+        <nav class="nav" style="margin-left: 310px;" id="nav">
+            <div class="second_nav" id="second_nav">
+                <div class="second_nav_item">
+                    <div class="btn_corner btn_corner-tl"></div>
+                    <div class="btn_corner btn_corner-tr"></div>
+                    <div class="btn_corner btn_corner-br"></div>
+                    <div class="btn_corner btn_corner-bl"></div>
+                    <div class="item_icon">
+                        <img src="img/speech-bubble-icon.png" style="margin-top: 10px;">
+                    </div>
+                    <div class="item_text">Have a question? You can <a href="#">chat with us</a> below real quick</div>
+                </div>
+                <div class="second_nav_item">
+                    <div class="btn_corner btn_corner-tl"></div>
+                    <div class="btn_corner btn_corner-tr"></div>
+                    <div class="btn_corner btn_corner-br"></div>
+                    <div class="btn_corner btn_corner-bl"></div>
+                    <div class="item_icon">
+                        <img src="img/envelope-icon.png" style="margin-top: 10px;">
+                    </div>
+                    <div class="item_text">You can also <a href="#">contact our support</a> for more details.</div>
+                </div>
+            </div>
+        </nav>
+        <header class="header hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="index.html" class="header__logo">
+                            <img src="img/superdao-logo.png" alt="" class="header__logo__img">
+                            <span class="header__logo__descr">Efficient, tiered & reputation<br>DAO Governance Framework</span>
+                        </a>
+                        <div class="header__right">
+                            <a href="https://blog.superdao.io/" target="_blank" class="Whitepaper"><span class="sp-ico-doc"></span>Whitepaper</a>
+                            <a href="http://www.t.me/superdaohq" target="_blank" class="header__auth header__demo">Community</a>
+                            <a href="Second_Page.html" target="_blank" class="header__auth header__demo">FAQ</a>
+                        </div>
+                        <audio id="main_audio" autoplay="autoplay" preload="auto" loop="loop">
+                            <source src="music/AgeOfTechnology.mp3" type="audio/ogg">
+                            <embed id="background_music" autostart="true" loop="true" width="0" height="0" src="music/AgeOfTechnology.mp3" />
+                        </audio>
+                        <a class="music_btn" id="on_off">off</a>
+                        <audio id="bg_music">
+                            <source src="music/bg_music.mp3" type="audio/ogg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header-mob hidden-lg hidden-md hidden-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="#s_1">
+                            <div class="header-mob__logo"><img src="img/superdao-logo.png" alt=""></div>
+                        </a>
+                        <a href="" target="_blank" class="header-mob__contribute">Contribute</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer hidden-sm hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-5 text-left">
+                        <div class="footer__copyright">
+                            <a href=""><img src="img/chat-button.png" class="chat-button"></a>
+                            <span style="margin-left: 15px;">A SuperDAO Dapp Product</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 text-center">
+                        <div class="bounties">
+                            <div class="btn_link">
+                                <div class="btn_corner btn_corner-tl"></div>
+                                <div class="btn_corner btn_corner-tr"></div>
+                                <div class="btn_corner btn_corner-br"></div>
+                                <div class="btn_corner btn_corner-bl"></div>
+                                <div class="bounty">
+                                    <a href="" target="_blank" class="bounties_btn">Bounties</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-5 text-right">
+                        <div class="footer__soc">
+                            <a href="http://www.t.me/superdaohq" target="_blank"><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                            <a href="https://blog.superdao.io/" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/superdaohq" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/superdaohq" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.reddit.com/r/SuperDao/" target="_blank"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/company/superdao/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12" style="margin-top: 30px;">
+                    <div class="footer-corner footer-corner-l"></div>
+                    <div class="footer-corner footer-corner-r"></div>
+                    <div class="brack">
+                        <marquee>
+                            <img src="img/superdao-logo.png" class="footer-img">
+                            <span>SUPERNEUM  Market Cap:</span>
+                            <span class="footer-value">$ ...</span>
+                            <span class="footer-divide">|</span>
+                            <span>Total Tokens:</span>
+                            <span class="footer-value">100,000,000.00</span>
+                            <span class="footer-divide">|</span>
+                            <span>Price:</span>
+                            <span class="footer-value">$ 46.7986</span>
+                            <span class="footer-divide">|</span>
+                            <span>SUP:</span>
+                            <span class="footer-value">0.0465617596 </span>ETH
+                            <span class="footer-divide">|</span>
+                            <span>SUPERNEUM PRICE:</span>
+                            <span class="footer-value">0.004181246012080001 </span>BTC/SUP
+                            <span class="footer-divide">|</span>
+                            <img src="" class="footer-img">
+                            <span>ETH:</span>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </footer>
+    <canvas id="page-bg-2" class="page-bg" style="display: none;"></canvas>
+    <div id="webgl-container">
+        <canvas id="webgl-canvas" class="s_1__bg" style="background: url('img/primary-background.jpg')"></canvas>
+    </div>
+    <div id="fullpage" class="sections-wrap">
+        <!-- Second Page -->
+        <section class="section s_11 s_10 s_4 head-home">
+            <!-- <canvas id="page-bg-10" class="page-bg"></canvas> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="s_10__descr">
+                            <h2 class="s_title" data-before="Frequently asked questions">Getting <br>Started</h2>
+                            <div class="s_4__wrap hidden-xs ul_wrapper_sec">
+                                <ul class="s_4__nav hidden-xs">
+                                    <li class="active">
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_11__tab-11-1" class="li_sec">DAPPS</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_11__tab-11-2" class="li_sec">Token Allocation</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_11__tab-11-3" class="li_sec">Bounties</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_11__tab-11-4" class="li_sec">Governance</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_11__tab-11-5" class="li_sec">Pre_ICO</a>
+                                    </li>
+                                    <li>
+                                        <div class="li_corner li_corner-tl"></div>
+                                        <div class="li_corner li_corner-tr"></div>
+                                        <div class="li_corner li_corner-br"></div>
+                                        <div class="li_corner li_corner-bl"></div>
+                                        <a href="#s_11__tab-11-6" class="li_sec">Token</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="s_4__wrap hidden-xs">
+                            <div class="s_4__text d-table-cell content_sec">
+                                <div class="s_4_1__video__corner s_4_1__video__corner-tr hidden-xs"></div>
+                                <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-xs"></div>
+                                <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-xs"></div>
+                                <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-xs"></div>
+                                <div class="s_4__tab active" id="s_11__tab-11-1">
+                                    <a href="#s_11__tab-11-1" class="hidden-lg hidden-md hidden-sm s_4__tab__title">ABOUT</a>
+                                    <div class="d-table">
+                                        <div class="d-table-cell">
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                        </div>
+                                        <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                    </div>
+                                </div>
+                                <div class="s_4__tab" id="s_11__tab-11-2" style="display: none;">
+                                    <a href="#s_11__tab-11-2" class="hidden-lg hidden-md hidden-sm s_4__tab__title">VIRTUAL REALITY</a>
+                                    <div class="d-table">
+                                        <div class="d-table-cell">
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                        </div>
+                                        <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                    </div>
+                                </div>
+                                <div class="s_4__tab" id="s_11__tab-11-3" style="display: none;">
+                                    <a href="#s_11__tab-11-3" class="hidden-lg hidden-md hidden-sm s_4__tab__title">E-COMMERCE</a>
+                                    <div class="d-table">
+                                        <div class="d-table-cell">
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                        </div>
+                                        <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                    </div>
+                                </div>
+                                <div class="s_4__tab" id="s_11__tab-11-4" style=" display: none;">
+                                    <a href="#s_11__tab-11-4" class="hidden-lg hidden-md hidden-sm s_4__tab__title">BLOCKCHAIN</a>
+                                    <div class="d-table">
+                                        <div class="d-table-cell">
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                        </div>
+                                        <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                    </div>
+                                </div>
+                                <div class="s_4__tab" id="s_11__tab-11-5" style=" display: none;">
+                                    <a href="#s_11__tab-11-5" class="hidden-lg hidden-md hidden-sm s_4__tab__title">SOCIAL NETWORKS AND THE BLOGOSPHERE</a>
+                                    <div class="d-table">
+                                        <div class="d-table-cell">
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                        </div>
+                                        <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                    </div>
+                                </div>
+                                <div class="s_4__tab" id="s_11__tab-11-6" style=" display: none;">
+                                    <a href="#s_11__tab-11-6" class="hidden-lg hidden-md hidden-sm s_4__tab__title">SOCIAL NETWORKS AND THE BLOGOSPHERE</a>
+                                    <div class="d-table">
+                                        <div class="d-table-cell">
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                            <div class="content_sec_wrapper">
+                                                <h3 class="content_sec_title">What is Lorem Ipsum?</h3>
+                                                <div class="content_sec_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+                                            </div>
+                                        </div>
+                                        <div class="s_4_1__video__corner s_4_1__video__corner-br hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__corner s_4_1__video__corner-bl hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__border s_4_1__video__border-top-bottom hidden-lg hidden-md hidden-sm"></div>
+                                        <div class="s_4_1__video__border s_4_1__video__border-left-right hidden-lg hidden-md hidden-sm"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    <script src="js/scripts.min.js" async></script>
+</body>
+
+</html>
