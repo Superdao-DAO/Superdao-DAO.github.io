@@ -256,7 +256,7 @@ function initHighChart(){
 
         },
         credits:{enabled: false},
-        colors: ['#60cae9', '#48ea8d', '#FFFFFF', '#48afea'],
+        // colors: ['#60cae9', '#48ea8d', '#FFFFFF', '#48afea'],
         legend: {
             enabled: true,
             labelFormatter: function() {
