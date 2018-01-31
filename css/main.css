@@ -8486,7 +8486,7 @@ a {
 .s_2__timeline__checkbox.checked {
     /* background-color: #fff;
     border: 1px solid #fff */
-    width:21px;
+    width:22px;
     background-image: url('../img/graph-active-point.png');
 }
 
@@ -8718,7 +8718,7 @@ a {
 }
 
 .s_3__structure__circle:before {
-    content: "";
+    /*content: "";
     display: block;
     width: 196px;
     height: 196px;
@@ -8732,7 +8732,7 @@ a {
     background: url(../img/structure_circle-2.png) center center no-repeat;
     -webkit-box-shadow: 0 0 114px rgba(72, 175, 234, .75);
     box-shadow: 0 0 114px rgba(72, 175, 234, .75);
-    z-index: 0
+    z-index: 0*/
 }
 
 .s_3__structure__circle svg {
