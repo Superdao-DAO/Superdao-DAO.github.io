@@ -1,4 +1,4 @@
-$(window).mousewheel(function(turn, delta) {
+$(window).bind('mousewheel',function(turn, delta) {
     var str_section = window.location.href;
     var section_id = str_section.substring(str_section.indexOf('#') + 1, str_section.length);
     if (section_id == "Token_allocation") {
