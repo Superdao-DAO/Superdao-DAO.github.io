@@ -1,12 +1,20 @@
-$(window).bind('mousewheel',function(turn, delta) {
-    var str_section = window.location.href;
-    var section_id = str_section.substring(str_section.indexOf('#') + 1, str_section.length);
-    if (section_id == "Token_allocation") {
-        window.setTimeout(initHighChart, 1000);
-    }
+function checkInitChart(){
+  var str_section = window.location.href;
+  var section_id = str_section.substring(str_section.indexOf('#') + 1, str_section.length);
+  if (section_id == "Token_allocation") {
+      window.setTimeout(initHighChart, 1000);
+  }
 
-    return false;
+  return false;
+}
+
+$(window).on('mousewheel',function(turn, delta) {
+    checkInitChart();
 });
+$(window).on('hashchange', function() {
+    checkInitChart();
+});
+
 $(document).ready(function() {
     var data = [
         {
