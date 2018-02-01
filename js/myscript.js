@@ -1,14 +1,5 @@
 
-$(document).ready(function() {
-    $(window).mousewheel(function(turn, delta) {
-        var str_section = window.location.href;
-        var section_id = str_section.substring(str_section.indexOf('#') + 1, str_section.length);
-        if (section_id == "Token_allocation") {
-            window.setTimeout(initHighChart, 1000);
-        }
-
-        return false;
-    });
+$(document).ready(function() {    
     var data = [
         {
             "year" : "2014",
@@ -256,7 +247,7 @@ function initHighChart(){
 
         },
         credits:{enabled: false},
-        // colors: ['#60cae9', '#48ea8d', '#FFFFFF', '#48afea'],
+        colors: ['#60cae9', '#48ea8d', '#FFFFFF', '#48afea'],
         legend: {
             enabled: true,
             labelFormatter: function() {
