@@ -1,5 +1,13 @@
+$(window).mousewheel(function(turn, delta) {
+    var str_section = window.location.href;
+    var section_id = str_section.substring(str_section.indexOf('#') + 1, str_section.length);
+    if (section_id == "Token_allocation") {
+        window.setTimeout(initHighChart, 1000);
+    }
 
-$(document).ready(function() {    
+    return false;
+});
+$(document).ready(function() {
     var data = [
         {
             "year" : "2014",
@@ -247,7 +255,7 @@ function initHighChart(){
 
         },
         credits:{enabled: false},
-        // colors: ['#60cae9', '#48ea8d', '#FFFFFF', '#48afea'],
+        colors: ['#60cae9', '#48ea8d', '#FFFFFF', '#48afea'],
         legend: {
             enabled: true,
             labelFormatter: function() {
@@ -260,34 +268,22 @@ function initHighChart(){
                 colorByPoint: true,
                 data: [
                     {
-                        name: 'Early (SUP holders) Backers',
-                        y: 3
-                    }, 
-                    {
-                        name: 'Dapp destribution favouring to early SUP holders',
-                        y: 45,
+                        name: 'Lorem',
+                        y: 456.33,
                         sliced: true,
                         selected: true
                     }, 
                     {
-                        name: 'Dapp/SuperDA0 Partners',
-                        y: 5
+                        name: 'Lorem',
+                        y: 324.03
                     }, 
                     {
-                        name: 'Bounty Pool',
-                        y: 15
+                        name: 'Lorem',
+                        y: 210.38
                     }, 
                     {
-                        name: 'Marketing Budget ',
-                        y: 10
-                    }, 
-                    {
-                        name: 'Endownment Fund',
-                        y: 10
-                    }, 
-                    {
-                        name: 'CoreTeam Allocation ',
-                        y: 12
+                        name: 'Lorem',
+                        y: 100.91
                     }
                 ]
             }
