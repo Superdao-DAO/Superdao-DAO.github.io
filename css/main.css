@@ -8838,7 +8838,8 @@ a {
 .s_3__discount {
     width: 50%;
     float: left;
-    width: 350px
+    width: 350px;
+    margin-left: 20px;
 }
 
 .s_3__discount__params {
