@@ -10,7 +10,7 @@ $(window).bind('mousewheel',function(turn, delta) {
 $(document).ready(function() {
     var data = [
         {
-            "year" : "2014",
+            "year" : "2011-2014",
             "pass": true,
             "display": false,
             "content": [
@@ -52,7 +52,7 @@ $(document).ready(function() {
             ]
         },
         {
-            "year": "2016",
+            "year": "2016-2017",
             "pass": true,
             "display": false,
             "content": [
@@ -133,7 +133,7 @@ $(document).ready(function() {
             ]
         },
         {
-            "year": "2019",
+            "year": "2018",
             "pass": false,
             "display": false,
             "content": [
