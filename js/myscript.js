@@ -37,7 +37,7 @@ $(document).ready(function() {
             ]
         },
         {
-            "year" : "2015",
+            "year" : "2016-2017",
             "pass": true,
             "display": false,
             "content": [
@@ -60,7 +60,7 @@ $(document).ready(function() {
             ]
         },
         {
-            "year": "2016-2017",
+            "year": "2017",
             "pass": true,
             "display": false,
             "content": [
@@ -91,7 +91,7 @@ $(document).ready(function() {
             ]
         },
         {
-            "year": "2017",
+            "year": "2018",
             "pass": true,
             "display": false,
             "content": [
