@@ -14,7 +14,14 @@ $(window).on('mousewheel',function(turn, delta) {
 $(window).on('hashchange', function() {
     checkInitChart();
 });
-
+$('.divMarquee').marquee({
+	speed: 50,
+	gap: 50,
+	delayBeforeStart: 0,
+	direction: 'left',
+	duplicated: true,
+	pauseOnHover: true
+});
 $(document).ready(function() {
     var data = [
         {
