@@ -171,6 +171,7 @@ $(document).ready(function() {
             $("#on_off").html('off');
         }
     });
+
     var str_section = window.location.href;
     var section_id = str_section.substring(str_section.indexOf('#') + 1, str_section.length);
     if (section_id == "Token_allocation") {
