@@ -158,7 +158,7 @@ $(document).ready(function() {
     ];
     $('.loading-overlay').show();
     setTimeout(function() {$('.loading-overlay').hide()}, 5000);
-    
+
     var isPlaying = function(audio) {return !audio.paused;}
     var a = document.getElementById('main_audio');
     a.volume = 0.05;
@@ -186,7 +186,7 @@ $(document).ready(function() {
 
         if(data[i].pass == true) {
             $('.s_2__timeline__year.s_2__timeline__year-' + year).find('.s_2__timeline__checkbox').css("background-image", "url('img/graph-active-point.png')");
-        } 
+        }
         $('.s_2__timeline__year.s_2__timeline__year-' + year).find('.s_2__timeline__label').append(data[i].year);
         var content = data[i].content;
         for(var j = 0; j < content.length; j++) {
@@ -195,14 +195,14 @@ $(document).ready(function() {
                 var text = content[j].text;
                 for(var k = 0; k < text.length; k++) {
                     monthtext[j] += '<br>' + text[k];
-                }   
+                }
                 monthtitle[j] = '';
                 monthtitle[j] = '<strong>' + content[j].title + '</strong>';
                 monthdata[j] = '';
-                monthdata[j] =  '<div class="d-table-cell s_2__tabs__col">' + monthtitle[j] + monthtext[j] + '</div>';                     
-                yeardata[i] += monthdata[j]; 
-            }                
-        }  
+                monthdata[j] =  '<div class="d-table-cell s_2__tabs__col">' + monthtitle[j] + monthtext[j] + '</div>';
+                yeardata[i] += monthdata[j];
+            }
+        }
         var style = '';
         if(data[i].display == true) {
             style = 'block';
@@ -212,11 +212,12 @@ $(document).ready(function() {
         var temp = '<div class="s_2__tab" id="s_2__tab-' + year + '" style="display: ' + style + '"><div class="d-table">' + yeardata[i] + '</div></div>';
         $("#myroadmap").append(temp);
     }
-});      
+});
 
 
 $("a, .bounty").on('mouseover', function(e) {
     var x = document.getElementById("bg_music");
+    x.volume = 0.05;
     x.play();
 });
 function initHighChart(){
@@ -228,7 +229,7 @@ function initHighChart(){
             width:245,
             height:300,
             events: {
-                load: function () { 
+                load: function () {
                   $(".highcharts-legend-item rect").attr('height', 0);
                   $(".highcharts-legend-item rect").attr('width', 0);
                 },
@@ -267,8 +268,8 @@ function initHighChart(){
         legend: {
             enabled: true,
             labelFormatter: function() {
-                return '';            
-            },            
+                return '';
+            },
         },
         series: [
             {
@@ -280,15 +281,15 @@ function initHighChart(){
                         y: 456.33,
                         sliced: true,
                         selected: true
-                    }, 
+                    },
                     {
                         name: 'Lorem',
                         y: 324.03
-                    }, 
+                    },
                     {
                         name: 'Lorem',
                         y: 210.38
-                    }, 
+                    },
                     {
                         name: 'Lorem',
                         y: 100.91
@@ -297,6 +298,6 @@ function initHighChart(){
             }
         ]
     };
-    
+
     var chart = new Highcharts.Chart(options);
 }
