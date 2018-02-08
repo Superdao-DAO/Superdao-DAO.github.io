@@ -312,6 +312,18 @@ textarea {
     border-radius: 50%
 }
 
+.none{
+    display:none;
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}
+
 hr {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -8706,6 +8718,10 @@ a {
     width: 50%;
     float: left;
     position: relative
+}
+
+.s_3__structure.col-lg-8.col-md-8 {
+    width: 66.67%;
 }
 
 .s_3__structure__circle {

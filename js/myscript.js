@@ -44,7 +44,7 @@ $(document).ready(function() {
             ]
         },
         {
-            "year" : "2015",
+            "year" : "2016-2017",
             "pass": true,
             "display": false,
             "content": [
@@ -67,7 +67,7 @@ $(document).ready(function() {
             ]
         },
         {
-            "year": "2016-2017",
+            "year": "2017",
             "pass": true,
             "display": false,
             "content": [
@@ -98,7 +98,7 @@ $(document).ready(function() {
             ]
         },
         {
-            "year": "2017",
+            "year": "2018",
             "pass": true,
             "display": false,
             "content": [
@@ -126,7 +126,7 @@ $(document).ready(function() {
         },
         {
             "year": "2018",
-            "pass": true,
+            "pass": false,
             "display": true,
             "content": [
                 {
@@ -272,7 +272,7 @@ function initHighChart(){
 
         },
         credits:{enabled: false},
-        colors: ['#23abf9', '#2385f9', '#FFFFFF', '#60cae9'],
+        colors: ['#027EC7', '#2385f9', '#099EF6', '#4EB9F9', '#7ACAF9', '#099EF6', '#2DA1E5'], //
         legend: {
             enabled: true,
             labelFormatter: function() {
@@ -285,12 +285,13 @@ function initHighChart(){
                 colorByPoint: true,
                 data: [
                     {
-                        name: 'Lorem',
-                        y: 456.33,
+                        name: 'Dapp distribution',
+                        y: 45,
                         sliced: true,
                         selected: true
                     },
                     {
+<<<<<<< HEAD
                         name: 'Lorem',
                         y: 324.03
                     },
@@ -298,9 +299,30 @@ function initHighChart(){
                         name: 'Lorem',
                         y: 210.38
                     },
+=======
+                        name: 'Early Backers',
+                        y: 3
+                    }, 
                     {
-                        name: 'Lorem',
-                        y: 100.91
+                        name: 'Core Team Allocation',
+                        y: 12
+                    }, 
+                    {
+                        name: 'Endowment Fund',
+                        y: 10
+                    }, 
+                    {
+                        name: 'Marketing Budget',
+                        y: 10
+                    }, 
+                    {
+                        name: 'Bounty Pool',
+                        y: 15
+                    }, 
+>>>>>>> 253cba749a2bdb636040fe1eb9be0ee580a4b85f
+                    {
+                        name: 'Dapp Partners',
+                        y: 5
                     }
                 ]
             }
