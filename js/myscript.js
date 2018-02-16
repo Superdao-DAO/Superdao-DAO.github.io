@@ -291,15 +291,6 @@ function initHighChart(){
                         selected: true
                     },
                     {
-<<<<<<< HEAD
-                        name: 'Lorem',
-                        y: 324.03
-                    },
-                    {
-                        name: 'Lorem',
-                        y: 210.38
-                    },
-=======
                         name: 'Early Backers',
                         y: 3
                     }, 
@@ -319,7 +310,6 @@ function initHighChart(){
                         name: 'Bounty Pool',
                         y: 15
                     }, 
->>>>>>> 253cba749a2bdb636040fe1eb9be0ee580a4b85f
                     {
                         name: 'Dapp Partners',
                         y: 5
