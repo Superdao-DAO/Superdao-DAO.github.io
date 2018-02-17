@@ -168,7 +168,7 @@ $(document).ready(function() {
 
     var isPlaying = function(audio) {return !audio.paused;}
     var a = document.getElementById('main_audio');
-    a.volume = 0.05;
+    a.volume = 0.03;
     $('.music_btn').on('click', function() {
         if (isPlaying(a)) {
             a.pause();
