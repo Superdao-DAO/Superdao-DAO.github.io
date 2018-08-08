@@ -125,7 +125,7 @@ $(document).ready(function() {
             ]
         },
         {
-            "year": "2018",
+            "year": "2018 - 2019",
             "pass": false,
             "display": true,
             "content": [
@@ -148,7 +148,7 @@ $(document).ready(function() {
             ]
         },
         {
-            "year": "2018",
+            "year": "2019",
             "pass": false,
             "display": false,
             "content": [
